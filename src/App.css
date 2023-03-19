@@ -1,0 +1,154 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#loggedin{
+  text-align: center;
+}
+
+#loggedin #cards{
+  width: 500px;
+  margin: auto;
+}
+
+
+#hero{
+  background-color: #444444;
+  color: white;
+  max-height: 69px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#logout{
+  height: 30px;
+  margin-right: 10px;
+}
+
+#hero h1{
+  margin-left: 10px;
+}
+
+#title{
+
+height: 97px;
+margin-top: 115px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 13px;
+line-height: 22px;
+text-align: center;
+}
+
+#loginbutton{
+  text-align: center;
+}
+
+#btn{
+  background-color: #4F4CF5;
+  border-radius: 5px;
+  width: 167px;
+  height: 50px;
+  color: white;
+
+  font-weight: 600;
+  font-size: 20px;
+}
+
+#citycard{
+  background-color: #cccccc;
+  margin: 10px;
+}
+
+#info{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: 
+  "header header header header"
+  "1 high low 4"
+  "1 rf wind 3";
+  margin-top: 150px;
+  backdrop-filter: blur(2px);
+}
+
+#info h2{
+  grid-area: header;
+  text-align: center;
+}
+
+#info p{
+  text-align: center;
+}
+
+#info #low{
+  grid-area: low;
+}
+
+#info #rf{
+  grid-area: rf;
+}
+
+#info #wind{
+  grid-area: wind;
+}
+
+#info #high{
+  grid-area: high;
+}
+
+#card{
+  max-width: 338px;
+  min-height: 600px;
+  grid-area: card;
+  color: black;
+  background-image: #cccccc;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: auto;
+  border-radius: 5px;
+}
+
+#header{
+  text-align: center;
+  margin-top: 10px;
+}
